@@ -1,8 +1,8 @@
 {
-  "name": "typescript-action",
-  "version": "0.0.0",
+  "name": "action-docker-pull",
+  "version": "0.1.0",
   "private": true,
-  "description": "TypeScript template action",
+  "description": "Pull docker image",
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc",
@@ -10,17 +10,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/typescript-action.git"
+    "url": "git@github.com:paulriley/action-docker-pull.git"
   },
   "keywords": [
     "actions",
     "node",
     "setup"
   ],
-  "author": "YourNameOrOrganization",
+  "author": "Paul Riley",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.0.0"
+    "@actions/core": "^1.2.0",
+    "@types/dockerode": "^2.5.20",
+    "dockerode": "^3.0.2"
   },
   "devDependencies": {
     "@types/jest": "^24.0.13",
